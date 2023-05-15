@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        form{
+            position: absolute;
+            right: 100px;
+            top: 100px;
+        }
+        div{
+            
+            right: 0px;
+            width: 400px;
+            padding: 7px;
+            padding-left: 15px;
+            border-radius: 10px;
+            border: 1px ;
+            margin-left: 0ex;
+            border-style: solid;
+            border-color:lightgray;
+            line-height: 1.8;
+        }
+        h3{
+            font-family: sans-serif;
+            font-weight: 100;
+            border: solid;
+            border-color: white;
+            text-align: center;
+            width: 425px;
+            font-size : 35px ;
+
+        }
+        textarea{
+            height: 100px;
+            width: 375px;
+            border: 0px;
+            resize: none;
+        }
+        input,select{
+            border: 0px;
+            width: 400px;
+            height: 25px;
+            }
+8  8
+        label
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: x-small;
+            font-weight: 100;
+        }
+        button {
+  background-color: #665fc4;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  width: 425px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="img.jpg" alt="Laptop" >
+    <form>
+        <h3>Send Us A Message</h3>
+        <div style="border-style: solid";>
+            <label for="FULL NAME">FULL NAME</label><br>
+            <input type="text"; name="NAME"; id="FULL NAME"; placeholder="Enter your name" ; required>
+        </div><br>
+        <div>
+            <label for="email">EMAIL ADDDRESS</label><br>
+            <input type="email"; name="email"; id="email"; placeholder="Enter your email"; required>
+        </div><br>
+        <div>
+            <label for="what?">WHAT DO YOU NEED?</label><br>
+            <select name="what?"; id="what?">
+            <option value="">Please select</option>
+            <option value="Blablabl1">Blablabla1</option>
+            <option value="Blablabl2">Blablabla2</option>
+            <option value="Blablabl3">Blablabla3</option>
+            <option value="Blablabl4">Blablabla4</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="MESSAGE">MESSAGE</label><br>
+            <textarea name="MESSAGE"; id="MESSAGE"; placeholder="Enter your message here..."; required></textarea>
+        </div><br>
+        <button>SEND</button>
+    </form>
+</body>
+</html>

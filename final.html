@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        img
+        {
+            width: 1000px ;
+            height: auto;
+        }
+        .at:hover 
+        {
+            opacity: 0.9;
+            border-image: auto;
+            cursor: pointer;
+
+        }
+        form
+        {
+            position: absolute;
+            right: 70px;
+            top: 70px;
+            color: rgba(6, 6, 6, 0.678);
+        }
+        div{
+            
+            right: 0px;
+            width: 400px;
+            padding: 7px;
+            padding-left: 15px;
+            border-radius: 10px;
+            border: 1px ;
+            margin-left: 0ex;
+            border-style: solid;
+            border-color:lightgray;
+            line-height: 1.8;
+            background-color: white;
+        }
+        h3{
+            padding: 7px;
+            border-radius: 10px;
+            font-family: sans-serif;
+            font-weight: 100;
+            border: solid;
+            border-color: white;
+            text-align: center;
+            width: 400px;
+            font-size : 35px ;
+            background-color: white;
+        }
+        textarea{
+            height: 100px;
+            width: 375px;
+            border: 0px;
+            resize: vertical;
+            background-color: white;
+            border: rgba(97, 71, 77, 0.37);
+        }
+        input,select{
+            border: 0px;
+            width: 390px;
+            height: 25px;
+            border: rgba(97, 71, 77, 0.37);
+            background-color:white;
+            font-size: 15px;
+            }
+        label
+        {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        button 
+        {
+            background-color: #665fc4;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            padding: 15px 32px;
+            width: 425px;
+            text-align: center;
+            display: inline-block;
+            font-size: 15px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    button.send:hover{
+        background-color: rgba(75, 32, 25, 0.705);
+    }
+    </style>
+</head>
+<body>
+   <img class="at"; src="img.jpg" alt="Laptop" >
+    <form>
+        <h3>Send Us A Message</h3>
+        <div style="border-style: solid";>
+            <label for="FULL NAME">FULL NAME</label><br>
+            <input type="text"; name="NAME"; id="FULL NAME"; placeholder="Enter your name" ; required>
+        </div><br>
+        <div>
+            <label for="email">EMAIL ADDDRESS</label><br>
+            <input type="email"; name="email"; id="email"; placeholder="Enter your email"; required>
+        </div><br>
+        <div>
+            <label for="what?">WHAT DO YOU NEED?</label><br>
+            <select name="what?"; id="what?">
+            <option value="">Please select</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            </select>
+        </div><br>
+        <div>
+            <label for="MESSAGE">MESSAGE</label><br>
+            <textarea name="MESSAGE"; id="MESSAGE"; placeholder="Enter your message here..."; required></textarea>
+        </div><br>
+        <button class="send">SEND</button>
+    </form>
+</body>
+</html>
